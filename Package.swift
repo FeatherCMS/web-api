@@ -10,7 +10,8 @@ let package = Package(
         .library(name: "WebObjects", targets: ["WebObjects"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/feathercms/feather-objects", .branch("main")),
+		.package(path: "../feather-objects"),
+//        .package(url: "https://github.com/feathercms/feather-objects", .branch("main")),
     ],
     targets: [
         .target(name: "WebObjects", dependencies: [
