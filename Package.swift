@@ -4,13 +4,13 @@ import PackageDescription
 let package = Package(
     name: "web-objects",
     platforms: [
-       .macOS(.v10_15)
+       .macOS(.v12)
     ],
     products: [
         .library(name: "WebObjects", targets: ["WebObjects"]),
     ],
-    dependencies: [
-        .package(url: "https://github.com/feathercms/feather-objects", .branch("main")),
+    dependencies: [		
+       .package(url: "https://github.com/feathercms/feather-objects", .branch("main")),
     ],
     targets: [
         .target(name: "WebObjects", dependencies: [
